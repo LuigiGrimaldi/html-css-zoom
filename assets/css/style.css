@@ -6,41 +6,72 @@
 
 :root {
     --zm-primary: #000000;
-    --zm-secondary:#222222;
-    --zm-bottom:#4a4a4a;
+    --zm-secondary: #222222;
+    --zm-bottom: #4a4a4a;
 
 }
 
-#site-main {
+/* #site-main {
     background-color: var(--zm-primary);
-}
+} */
 
-.row .item{
+.row .item {
     display: inline-block;
+    position: relative;
 }
 
-.item > img{
+.row {
+    position: relative;
+    justify-content: center;
+    gap: 0.25rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item>img {
     width: 100%;
 }
 
 /* REGION UTILITY */
-.container{
- 
+.container {
     flex-basis: 100vh;
+}
+
+.d-flex {
+    display: flex;
+    
     
 }
 
-.d-flex{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.25rem;
-}
-
-.p-2{
+.p-2 {
     padding: 2rem;
 }
 
 
+
+
 /* ENDREGION UTILITY */
+
+/* REGION MAIN */
+.row .microphone {
+    position: absolute;
+    left: 1px;
+    bottom: 6px;
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+/* ENDREGION MAIN */
+
+/* REGION FOOTER */
+    #site-footer{
+        background-color: var(--zm-bottom);
+    }
+
+    .nav-bar{
+        justify-content: space-between;
+    }
+
+    .nav-bar .left-menu{
+
+    }
+/* ENDREGION FOOTER */
