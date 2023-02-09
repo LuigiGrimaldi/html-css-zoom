@@ -15,9 +15,31 @@
     background-color: var(--zm-primary);
 }
 
+.row .item{
+    display: inline-block;
+}
+
+.item > img{
+    width: 100%;
+}
+
+/* REGION UTILITY */
 .container{
     max-width: 1152px;
-    width: 70%;
+    flex-basis: 100vh;
     margin: auto;
 }
 
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-7{
+    width: calc(100% / 7);
+}
+
+
+
+/* ENDREGION UTILITY */
