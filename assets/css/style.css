@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --zm-primary: #000000;
+    --zm-secondary:#222222;
+    --zm-bottom:#4a4a4a;
+
+}
+
+#site-main {
+    background-color: var(--zm-primary);
+}
+
+.container{
+    max-width: 1152px;
+    width: 70%;
+    margin: auto;
+}
+
